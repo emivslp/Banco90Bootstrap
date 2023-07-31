@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco90.02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
+</head>
+<body>
+    <div class="container-fluid m-0 p-0" id="pagina">
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark py-3">
+                <!-- botando o class a gnt ta dizendo: olha, isso aqui é uma barra de navegacao, mas eu nao quero uma padrao, entao: expand = responsivo sm = pequeno(small) ; a cor é dark ; como ta responsivo, pode por um padding  -->
+                <div class="container">
+                <!-- A div container já tem o space around pré definido -->
+                    <ul class="navbar-nav">
+                        <!-- essa é a parte de navegação, o resto pode ser firula ou outras coisas, mas voce é a parte de navegação do usuário -->
+                        <li class="navbar-item"><a href="#"><img src="images/logoWhite.svg" height="100%" alt=""></a></li>
+                        <!-- class=navbar ---- voce nao é qqr link, voce é um item da parte de navegação. Colocar o heigth para se adequar ao navegador, mas nao o width para nao destorcer -->
+                        <li class="navbar-item"><a href="#" class="nav-link text-warning">Home</a></li>
+                        <!-- class=navlink --- voce nao é qqr link, voce é um link do nav. O texto warning é só um charme pra marcar o home -->
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Ajuda</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Empréstimos</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Sua Conta</a></li>
+                    </ul>
+                    <ul class="navbar-nav" >
+                        <li class="navbar-item"><button class="btn btn-outline text-white border-white">Clique aqui</button></li>
+                        <!-- para configurar o botao, primeiramente voce tem que escrever btn pra ele saber que é do botao.   -->
+                    </ul>
+                </div>
+            </nav>
+            <!-- <div class="container-fluid my-2 p-0 d-flex justify-content-start aline-itens-center" style="height: 400px; background-image: url(images/banner.jpg); background-size: cover;"> ESSE-->
+                <!-- <img src="./images/banner.jpg" class="img-fluid max-width: 100%; height: auto; pt-3" alt=""> não deu certo pq tinha que ser um bg para poder ter uma div dentro-->
+                <!-- <div class="container" style="background-color: #f2511b69;"> -->
+                    <!-- ESSE <div class="container m-0 bg-dark " style="height: 200px; width: 500px;">
+                        <h1 class="text-black">SEJA BEM VINDO AO BANCO 90!</h1>
+                    </div> -->
+                    <!-- CARROSEL -->
+                    <div class="carousel slide" id="demo" data-bs-ride="carousel" >
+                    <!-- INDICADORES -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <!-- colocar o type=button para evitar bugs, pq as vezes ele identifica como submity -->
+                        <!-- ride=onde vai rolar o carrosel, target= o dado que vai mudar no carrosel -->
+                        <!-- data-bs-slide-to=0 === muda o slider e corre para a imagem 0 -->
+                        <!-- class=active = só pra dizer que esse elemento é ativo, só precisa colocar no 0 para o usuário se localizar, aonde ele começa, tipo o botao home warning -->
+                        <!--  <button type="button" data-bs-target="#demo" data-bs-slide-to="0"></button> isso quer dizer = mudar o demo e ir para o slide indicado -->
+                        <!-- se voce quiser que o slide só fique passando, sem o usuario controlar, é só tirar os indicadores. Dá pra colocar os indicadores como setinha também, ao inves dessas barras abaixo -->
+                    </div>
+                    <!-- SLIDER -->
+                    <div class="carousel-inner" style="height: 900px; overflow: hidden;">
+                        <!-- a gente jaa montou o carrosel e voce (class="carousel-inner") é o interior do carrossel -->
+                        <!-- esse style nao é necessario para funcionar, foi só pra adequar a imagem ao tamanho -->
+                        <div class="carousel-item active"> 
+                            <!-- colocar que ele é um item do carrossel e colocar o active pra ser o inicio. style="width: 100%;" para evitar de estourar a imagem. class="d-block" para estilizar, bloquear o flex pra nao ficar flutuando-->
+                            <img src="./images/clay-banks-VK-podfv2DU-unsplash.jpg" alt="" class="d-block" style="width: 100%; " >
+                        </div>
+                        <div class="carousel-item">
+                            <!-- tirou o active pq essa imagem nao é a primeira -->
+                            <img src="./images/jack-cohen-vOCJLn1TB2U-unsplash.jpg" alt="" class="d-block" style="width: 100%; ">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/banner.jpg" alt="" class="d-block" style="width: 100%; ">
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main></main>
+        <footer></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

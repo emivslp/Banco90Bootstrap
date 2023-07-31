@@ -1,0 +1,11 @@
+BootStrap:
+
+Primeiro jeito de fazer = Entrar no site do BootStrap > Docs > copiar CDN via jsDelivr > colocar o primeiro link la em cima no head e os scripts lá embaixo por ultimo. Esse jeito só vai funcionar se a internet estiver funcionando.
+
+Segundo jeito de fazer = Baixar (download) Compiled CSS and JS, que é a versão dos arquivos. Você pega implementa dois arquivos dele.
+
+Para conferir se está funcionando: h1TESTE - tem que estar zerado o margin e o padin. 
+
+No BootStrap exige que todo o menu de navegacao seja feito dentro do nav
+
+A div container já tem o space around pré definido
